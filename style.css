@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(18,18,18,1) 46%, rgba(0,0,0,1) 100%);
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+color: rgb(231, 231, 231);
+}
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(231, 231, 231); 
+}
+img{width: 100%;}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+/* *********************Titre************************** */
+
+.title {
+    padding-top: 2vh;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+.title h1{
+    padding-top: 0.5%;
+    font-size:1.5vw ;
+}
+.title img{
+ border-radius: 50%;
+ width: 8vw;
+}
+/* *****************************cont********************* */
+
+.cont{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-right:2% ;
+    margin-left: 2%;
+    
+}
+#alb{
+    border-radius:2% ;
+    overflow: hidden;
+    display: flex;
+     width:30vw ;
+    
+    
+}
+
+.contimg{
+    overflow: hidden;
+    width: 20vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 25vw; 
+    
+    transition: 0.5s;
+    z-index: 2;
+   
+    
+}
+
+.contimg img{
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+}
+.contimg h2{
+    padding-top: 1.5vw;
+    transition: 0.5s;
+    padding-top: auto;
+    
+    padding-bottom: auto;
+    font-size: 1.5vw;
+}
+
+#img2 , #img3{
+    opacity: 0.5;
+    width: 30%;
+    overflow: hidden;
+    z-index: 1;
+}
+#img2 h2, #img3 h2{
+   opacity: 0;
+}
+
+.reseau{
+
+width: 30vw; }
+.reseau a{
+    display: flex;
+    height: 14%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.5s;
+   
+}
+
+.dres{
+    width: 95%;
+    position: relative;
+    transition:all 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-right: auto;
+    margin-left: auto;
+   
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dres h2 {
+    font-size: 1.5vw;
+}
+.dres img{
+    position: absolute;
+    left: 15px;
+    width: 1.5vw;
+    
+}
+
+.dres:hover{
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .title img{
+        width:20vh;
+
+    }
+.title h1{
+    padding-top: 0.5%;
+    font-size:4vh ;
+}
+.cont{
+    flex-direction: column;
+    align-items: center;
+}
+#alb{
+    width: 80%;
+}
+.contimg{
+    overflow: hidden;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 60vw; 
+    
+    transition: 0.5s;
+    z-index: 2;
+   
+    
+}
+
+.contimg img{
+    height: 60vw;
+    width: 40vw;
+    object-fit: cover;
+}
+.contimg h2{
+    padding-top: 1.5vw;
+    transition: 0.5s;
+    padding-top: auto;
+    
+    padding-bottom: auto;
+    font-size: 3.5vw;
+}
+
+#img2 , #img3{
+    opacity: 0.5;
+    width: 20vw;
+    overflow: hidden;
+    z-index: 1;
+}
+#img2 h2, #img3 h2{
+   opacity: 0;
+}
+
+.reseau{
+    padding-top: 9%;
+    width: 60vw; 
+    height: 30vh;
+}
+    .reseau a{
+        
+        display: flex;
+        height: 14%;
+        margin-right: auto;
+        margin-left: auto;
+        transition: 0.5s;
+       
+    }
+    
+    .dres{
+        width: 95%;
+        position: relative;
+        transition:all 0.3s ease;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        margin-right: auto;
+        margin-left: auto;
+       
+        background-color: rgb(53, 53, 53);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .dres h2 {
+        font-size: 3vw;
+    }
+    .dres img{
+        position: absolute;
+        left: 15px;
+        width: 5vw;
+        
+    }
+    
+    .dres:hover{
+        width: 100%;
+    }
+  }
