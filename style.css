@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
-
+@import "compass/css3";
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    overflow: hidden;
     height: 100vh;
     background: radial-gradient(circle, rgba(43,43,43,1) 0%, rgba(18,18,18,1) 46%, rgba(0,0,0,1) 100%);
 }
@@ -19,6 +20,16 @@ h2{
 }
 img{width: 100%;}
 
+iframe{
+    margin-left: auto;
+    margin-right:  auto;
+    transition: 0.5s;
+    position: absolute;
+    top:500px ;
+    border: none;
+    width: 300px;
+    display: block;
+}
 a:link {
     text-decoration: none;
   }
@@ -116,6 +127,7 @@ width: 30vw; }
 .reseau a{
     display: flex;
     height: 14%;
+    padding-bottom: 2%;
     margin-right: auto;
     margin-left: auto;
     transition: 0.5s;
@@ -139,7 +151,8 @@ width: 30vw; }
     
 }
 .dres h2 {
-    font-size: 1.5vw;
+    transition: 0.3s;
+    font-size: 1.4vw;
 }
 .dres img{
     position: absolute;
@@ -150,17 +163,80 @@ width: 30vw; }
 
 .dres:hover{
     width: 100%;
+    
 }
+
+.dres:hover  h2{
+    font-size: 1.6vw;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 30%;
+    
+}
+
+.cross{
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50% 50%;
+    
+    position: relative;
+    transform: scale(1.3);
+   
+    &::before{
+        background: #888;
+        position: absolute;
+        display:block;
+        content:'';
+        width: 70%;
+        transition: 0.3s;
+        height: 6%;
+        top: 47%;
+        left: 15%;
+        transform: rotate(45deg);
+    } 
+    &::after{
+        background: #888;
+        position: absolute;
+        display:block;
+        transition: 0.3s;
+        content:'';
+        width: 6%;
+        height: 70%;
+        left: 47%;
+        top: 15%;
+        transform: rotate(45deg);
+    } 
+      
+    &:hover {
+       
+  
+        &::before{
+            background: #fff;
+            transform: rotate(225deg);
+          }
+      &::after{
+            background: #fff;
+            transform: rotate(-135deg);
+          }
+      }
+  }
 
 @media screen and (max-width: 800px) {
     
     .title img{
-        width:20vh;
+        width:10vh;
 
     }
 .title h1{
     padding-top: 0.5%;
-    font-size:4vh ;
+    font-size:2vh ;
 }
 .cont{
     flex-direction: column;
@@ -253,4 +329,71 @@ width: 30vw; }
     .dres:hover{
         width: 100%;
     }
+    .box{
+        z-index: 6;
+        position: fixed;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.678);
+        display: flex  ;
+        flex-direction: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+    }
+ iframe{
+    
+    margin: auto;
+    top: 20vh;
+ }
+ #i1{
+    height: auto !important;
+ }
+ .cross{
+   z-index: 7;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50% 50%;
+    display: block;
+    position: relative;
+    transform: scale(0.8);
+   
+    &::before{
+        background: #888;
+        position: absolute;
+        display:block;
+        content:'';
+        width: 70%;
+        transition: 0.3s;
+        height: 6%;
+        top: 47%;
+        left: 15%;
+        transform: rotate(45deg);
+    } 
+    &::after{
+        background: #888;
+        position: absolute;
+        display:block;
+        transition: 0.3s;
+        content:'';
+        width: 6%;
+        height: 70%;
+        left: 47%;
+        top: 15%;
+        transform: rotate(45deg);
+    } 
+      
+    &:hover {
+       
+  
+        &::before{
+            background: #fff;
+            transform: rotate(225deg);
+          }
+      &::after{
+            background: #fff;
+            transform: rotate(-135deg);
+          }
+      }
+  }
   }
