@@ -69,13 +69,13 @@ function myFunction(x) {
 img1.addEventListener("click",()=>{
     
     i1.style.top="0px"
-    i2.style.top="500px"
+    i2.style.top="100vh"
     
 })
 img3.addEventListener("click",()=>{
     
     i2.style.top="0px"
-    i1.style.top="500px"
+    i1.style.top="100vh"
    
 })
 

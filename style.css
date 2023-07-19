@@ -25,7 +25,7 @@ iframe{
     margin-right:  auto;
     transition: 0.5s;
     position: absolute;
-    top:500px ;
+    top:100vh ;
     border: none;
     width: 300px;
     display: block;
@@ -341,7 +341,7 @@ width: 30vw; }
         width: 100vw;
     }
  iframe{
-    
+    height: 30vh;
     margin: auto;
     top: 20vh;
  }
